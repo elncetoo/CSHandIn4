@@ -12,9 +12,8 @@ namespace ProgrammingHandIn3
     public partial class UpdatePat : System.Web.UI.Page
     {
 
-        private static List<Dentist> dentistslistdesr;
-
-        private static List<Patient> patientslistdesr;
+        private List<Dentist> dentistslistdesr;
+        private List<Patient> patientslistdesr;
         private static string filename;
         private static string filenamed;
 
@@ -129,6 +128,37 @@ namespace ProgrammingHandIn3
 
         protected void ButtonDelP_Click(object sender, EventArgs e)
         {
+            FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.None);
+            BinaryFormatter bf = new BinaryFormatter();
+            List<Patient> pl = (List<Patient>)bf.Deserialize(fs);
+            fs.Close();
+
+            LabelPatDash.Text = "Patient deleted.";
+            Patient p = (Patient)Session["pat_log"];
+
+            foreach (Patient pat in pl)
+            {
+                if (p.Email == pat.Email && p.Password == pat.Password)
+                {
+                    pl.Remove(pat);
+                    break;
+                }
+            }
+
+            // write to file
+            fs = new FileStream(filename, FileMode.Create, FileAccess.Write, FileShare.None);
+            bf = new BinaryFormatter();
+            bf.Serialize(fs, pl);
+            fs.Close();
+
+            // clear session
+            Session["pat_log"] = null;
+            Session.Clear();
+
+            // rediretto login page
+            Response.Redirect("HomePage.aspx");
+
+            /*
             int selected = GridViewPatInfo.SelectedIndex;
             patientslistdesr.RemoveAt(selected);
 
@@ -157,6 +187,8 @@ namespace ProgrammingHandIn3
 
             GridViewPatInfo.DataSource = patientslistdesr;
             GridViewPatInfo.DataBind();
+
+            */
         }
     }
 }

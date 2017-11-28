@@ -13,7 +13,7 @@
         <div style="text-align: center">
             <div style="background: white;" >
                 <br />
-                <asp:Label ID="LabelDent1" runat="server" CssClass="label" Text="Dentist logged in with email: "></asp:Label>
+                <asp:Label ID="LabelDent1" runat="server" CssClass="label" Text="Dentist logged in: "></asp:Label>
                 <asp:Label ID="LabelDentDash" runat="server" CssClass="label" ForeColor="Black"></asp:Label>
                 <br /><br />
              </div>

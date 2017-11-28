@@ -13,7 +13,7 @@ namespace ProgrammingHandIn3
     {
 
         List<Dentist> dentistslist = new List<Dentist>();
-        private static List<Dentist> dentistslistdesr;
+        private List<Dentist> dentistslistdesr;
         private string filename; // where we store users data
 
         public string email;
@@ -21,6 +21,7 @@ namespace ProgrammingHandIn3
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Deserialise();
 
             /*
             if (Application["DentistList"] == null)
@@ -41,16 +42,13 @@ namespace ProgrammingHandIn3
             {
                 if (dent.Email == email && dent.Password == password)
                 {
-
-                    return email.ToString();
+                    Session["dent_log"] = dent;
+                    // return email.ToString();
                 }
-                else
-
-                    //return dent.Email.ToString();
-                    return null;
-
+                //else
+                //return dent.Email.ToString();
             }
-            return email.ToString();
+            return null;
         }
 
 
@@ -72,13 +70,13 @@ namespace ProgrammingHandIn3
 
         protected void ButtonLogIn_Click(object sender, EventArgs e)
         {
-            string password = TextBoxPass.Text;
-            string email = TextBoxUName.Text;
+            string password = TextBoxDPass.Text;
+            string email = TextBoxDName.Text;
 
             if(dentistslistdesr.Count > 0)
             {
                 FindUser(email, password);
-                Session["dent_log"] = FindUser(email, password);
+                //Session["dent_log"] = FindUser(email, password);
                 //LabelMessageLogIn.Text = (string)Session["dent_log"];
                 Response.Redirect("DentDash.aspx");
             }

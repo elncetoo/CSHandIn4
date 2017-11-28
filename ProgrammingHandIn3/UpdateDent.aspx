@@ -19,7 +19,7 @@
        <div style="background: white;" >
              <br />
     &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="LabelInfo" runat="server" CssClass="label">Dentist logged in with email: </asp:Label>
+                <asp:Label ID="LabelInfo" runat="server" CssClass="label">Dentist logged in: </asp:Label>
 
                 <asp:Label ID="LabelUpdate" runat="server" CssClass="label" ForeColor="Black"></asp:Label>
                 <br />
@@ -32,7 +32,7 @@
 
             <br />
             <br />
-            <asp:Label ID="LabeName" runat="server" Text="Update Name:" CssClass="label"></asp:Label>
+            <asp:Label ID="LabelName" runat="server" Text="Update Name:" CssClass="label"></asp:Label>
             <br />
             <asp:TextBox ID="TextBoxName" runat="server" Width="271px"></asp:TextBox>
             <br />
@@ -43,7 +43,7 @@
 
             <br />
             <br />
-            <asp:Label ID="Label2" runat="server" Text="Update Email:" CssClass="label"></asp:Label>
+            <asp:Label ID="LabelUEmail" runat="server" Text="Update Email:" CssClass="label"></asp:Label>
             <br />
             <asp:TextBox ID="TextBoxEmail" runat="server" Width="271px"></asp:TextBox>
             <br />
@@ -80,13 +80,8 @@
                </asp:GridView>
                <br />
                <br />
+               <asp:Button ID="ButtonReadPatientFile" runat="server" CssClass="button" OnClick="ButtonReadPatientFile_Click" Text="Read patients from file" Width="181px" />
                <br />
-               <asp:Button ID="ButtonReadPatientFile" runat="server" CssClass="button" OnClick="ButtonReadPatientFile_Click" Text="Read from patient file" Width="181px" />
-               <br />
-&nbsp;&nbsp;&nbsp;
-               <br />
-               <asp:Label ID="LabelAllP" runat="server" CssClass="label" ForeColor="Black" Text="List of all Patients:"></asp:Label>
-               &nbsp;<br />
                <br />
                 <asp:GridView runat="server" ID="mygridallp" CssClass="mytable" Width="979px"> </asp:GridView>
                <br />
@@ -94,9 +89,7 @@
                <br />
                <br />
                <br />
-            <br />
-            <asp:GridView ID="GridView1" runat="server" CssClass="mytable" Width="509px">
-            </asp:GridView>
+               <br />
             <br style="text-align: right" />
            </div>
     </form>

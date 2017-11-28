@@ -28,18 +28,18 @@
             &nbsp;&nbsp;&nbsp;&nbsp;<br />
             <br />
             <br />
-&nbsp;<asp:Label ID="LabelUName" runat="server" Text="Patient Еmail" CssClass="label"></asp:Label>
+&nbsp;<asp:Label ID="LabelUName" runat="server" Text="Dentist Еmail" CssClass="label"></asp:Label>
         
         <br />
 &nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBoxUName" runat="server" Width="194px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxDName" runat="server" Width="194px"></asp:TextBox>
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;
-        <asp:Label ID="LabelPass" runat="server" Text="Patient Password" CssClass="label"></asp:Label>
+        <asp:Label ID="LabelPass" runat="server" Text="Dentist Password" CssClass="label"></asp:Label>
         <br />
 &nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBoxPass" runat="server" Width="194px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxDPass" runat="server" Width="194px"></asp:TextBox>
         <br />
         <br />
         &nbsp;&nbsp; <asp:Button ID="ButtonLogIn" runat="server" CssClass="button" Text="Log In" Width="180px" OnClick="ButtonLogIn_Click" />

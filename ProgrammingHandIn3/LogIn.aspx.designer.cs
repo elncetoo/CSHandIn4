@@ -40,13 +40,13 @@ namespace ProgrammingHandIn3 {
         protected global::System.Web.UI.WebControls.Label LabelUName;
         
         /// <summary>
-        /// TextBoxUName control.
+        /// TextBoxDName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUName;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxDName;
         
         /// <summary>
         /// LabelPass control.
@@ -58,13 +58,13 @@ namespace ProgrammingHandIn3 {
         protected global::System.Web.UI.WebControls.Label LabelPass;
         
         /// <summary>
-        /// TextBoxPass control.
+        /// TextBoxDPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxPass;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxDPass;
         
         /// <summary>
         /// ButtonLogIn control.

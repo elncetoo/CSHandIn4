@@ -67,13 +67,13 @@ namespace ProgrammingHandIn3 {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// LabeName control.
+        /// LabelName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabeName;
+        protected global::System.Web.UI.WebControls.Label LabelName;
         
         /// <summary>
         /// TextBoxName control.
@@ -103,13 +103,13 @@ namespace ProgrammingHandIn3 {
         protected global::System.Web.UI.WebControls.TextBox TextBoxAge;
         
         /// <summary>
-        /// Label2 control.
+        /// LabelUEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label LabelUEmail;
         
         /// <summary>
         /// TextBoxEmail control.
@@ -202,15 +202,6 @@ namespace ProgrammingHandIn3 {
         protected global::System.Web.UI.WebControls.Button ButtonReadPatientFile;
         
         /// <summary>
-        /// LabelAllP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAllP;
-        
-        /// <summary>
         /// mygridallp control.
         /// </summary>
         /// <remarks>
@@ -227,14 +218,5 @@ namespace ProgrammingHandIn3 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label MessagePatientForm;
-        
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

@@ -20,12 +20,20 @@ namespace ProgrammingHandIn3
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["dent_log"] != null && !Page.IsPostBack)
+            {
+                LabelDentDash.Text = Session["dent_log"].ToString();
+                // LabelPatDash.Text = (string)(Session["pat_log"]);
+            }
+
+            /*
             //LabelDentDash.Text = Session["dent_log"];
             if (Session["dent_log"] != null && !Page.IsPostBack)
             {
                 LabelDentDash.Text = (string)Session["dent_log"];
                 //UpdateGridview();
             }
+            */
         }
 
         protected void logoutbtn_Click(object sender, EventArgs e)
